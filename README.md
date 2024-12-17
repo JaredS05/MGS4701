@@ -1,5 +1,8 @@
 # 🚗 Kean University Data Analytics Capstone: Automobile Pricing  
 
+![image](https://github.com/user-attachments/assets/fc9a18cd-73ce-49e0-9f6d-b0a12c7769dd)
+
+
 ## 📌 Introduction  
 The automobile market is a complex ecosystem where car prices are influenced by a multitude of factors, including vehicle age, style, engine specifications, and fuel efficiency. Understanding these variables and their impact on pricing is essential for both consumers and manufacturers.  
 
