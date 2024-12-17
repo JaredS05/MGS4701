@@ -1,77 +1,142 @@
-# Kean-University-Data-Analytics-Capstone-Automobile-Pricing
+# 🚗 Kean University Data Analytics Capstone: Automobile Pricing  
 
-Introduction
-The automobile market is a complex ecosystem where car prices are influenced by a multitude of factors, including vehicle age, style, engine specifications, and fuel efficiency. Understanding these variables and their impact on pricing is essential for both consumers and manufacturers. With the increase of available vehicle data, it is now feasible to leverage data-driven methods to forecast automobile pricing with greater accuracy.
-This research focuses on a comprehensive dataset comprising features such as vehicle age, style, engine horsepower, and fuel efficiency, aiming to predict the Manufacturer's Suggested Retail Price (MSRP) using these attributes. By analyzing these characteristics, this project seeks to develop a predictive model that can reliably estimate MSRP and uncover the most significant factors affecting pricing in the automobile industry.
+## 📌 Introduction  
+The automobile market is a complex ecosystem where car prices are influenced by a multitude of factors, including vehicle age, style, engine specifications, and fuel efficiency. Understanding these variables and their impact on pricing is essential for both consumers and manufacturers.  
 
-Background
-Estimating a vehicle’s MSRP is challenging due to the interplay of numerous variables. Characteristics such as the car’s age, engine specifications, and style all contribute to its pricing. Analyzing the importance of these factors enables the development of a predictive model, offering valuable insights for consumers, manufacturers, and dealerships alike.
-The primary objective of this project is to develop a predictive model using a Random Forest Regressor to estimate MSRP based on diverse vehicle characteristics. Exploratory Data Analysis (EDA) is utilized to uncover critical relationships between features and their influence on MSRP. This research aims to deepen our understanding of automotive pricing dynamics while providing a reliable tool for estimating car costs based on specific features.
+This research focuses on a comprehensive dataset comprising features such as vehicle age, style, engine horsepower, and fuel efficiency. The objective is to predict the Manufacturer's Suggested Retail Price (MSRP) using these attributes. By analyzing these characteristics, this project develops a predictive model to reliably estimate MSRP and uncover the most significant factors affecting automobile pricing.  
 
-Explore
-How various vehicle factors affect MSRP.
-Variations in MSRP across vehicle styles and drive modes.
-Best predictive model for MSRP estimation using machine learning techniques.
+---
 
-Executive Summary
-The research investigates factors influencing automobile pricing and attempts to accurately predict MSRP. To achieve this, the following methodologies were employed:
-Data Collection: Aggregating vehicle data through APIs and web scraping.
-Data Wrangling: Transforming categorical variables and scaling numerical features.
-Exploratory Data Analysis (EDA): Identifying correlations between features like engine horsepower, car age, and MSRP.
-Predictive Modeling: Building machine learning models such as Linear Regression and Random Forest Regressor.
-Key Findings:
-Engine horsepower, vehicle style, and vehicle age are critical determinants of MSRP.
-A logarithmic transformation of MSRP improved prediction accuracy.
-The Random Forest Regressor outperformed Linear Regression, achieving an R-squared value of 0.9914.
+## 🔍 Background  
+Estimating a vehicle’s MSRP is challenging due to the interplay of numerous variables:  
 
-Methodology
-Data Collection
-API Requests: Vehicle data retrieved via API and converted into structured formats for analysis.
-Web Scraping: Used BeautifulSoup to extract additional features like vehicle styles and specifications from online sources.
-Data Preprocessing
-Missing numerical values imputed with the mean.
-Categorical variables encoded using one-hot encoding.
-Log transformation applied to MSRP to address skewness.
-Exploratory Data Analysis (EDA)
-Scatterplots revealed correlations between engine horsepower and MSRP.
-Bar charts highlighted pricing differences across vehicle styles.
-Histograms of MSRP supported the need for transformation.
-Model Training
-Dataset split into training (80%) and test (20%) sets.
-Hyperparameter tuning using Bayesian Optimization for XGBoost.
-Performance metrics evaluated: Mean Squared Error (MSE), R-squared, and Adjusted R-squared.
+- **Vehicle Age**  
+- **Engine Specifications**  
+- **Style and Drive Modes**  
 
-Results
-Exploratory Data Analysis
-Engine horsepower and car age emerged as the most influential predictors of MSRP.
-Vehicle styles and drive modes showed distinct pricing trends.
-Model Performance
-Linear Regression: R-squared = 0.8533, struggled with nonlinear relationships.
-Random Forest Regressor: R-squared = 0.9914, effectively captured feature interactions.
-Key Insights
-Higher engine horsepower strongly correlates with increased MSRP.
-Luxury vehicle styles command significantly higher pricing.
-Log transformation of MSRP enhanced model performance.
+This research employs a **Random Forest Regressor** model to estimate MSRP, supported by Exploratory Data Analysis (EDA) to uncover critical relationships. The insights are valuable for consumers, manufacturers, and dealerships seeking to understand automotive pricing dynamics.  
 
-Visualization / Analytics
-Scatterplot: Engine horsepower vs. MSRP.
-Bar Chart: Pricing differences by vehicle style.
-Histogram: MSRP distribution before and after log transformation.
+---
 
-Predictive Analytics
-Random Forest Regressor demonstrated superior accuracy, capturing complex relationships between features.
-Log transformation proved critical in improving predictions by minimizing the influence of extreme values.
+## 🎯 Objectives  
+- Analyze how various vehicle factors affect MSRP.  
+- Identify variations in MSRP across vehicle styles and drive modes.  
+- Develop the **best predictive model** for MSRP estimation using machine learning techniques.  
 
-Conclusion
-Model Performance
-Random Forest Regressor performed best with an R-squared of 0.9914, showcasing its ability to capture nonlinear interactions.
-Feature Significance
-Engine horsepower, car age, and vehicle style emerged as the most critical predictors of MSRP.
-Additional Observations
-Pricing strategies can be refined by leveraging insights from EDA.
-Logarithmic transformation addressed skewness effectively.
-Future Work
-Employ additional models like XGBoost for comparison.
-Expand the dataset for greater generalizability.
-Explore advanced feature selection methods, such as PCA, to improve predictive accuracy further.
+---
 
+## 📝 Executive Summary  
+
+This project investigates automobile pricing using a robust machine learning pipeline:  
+
+### Methodologies  
+1. **Data Collection**: APIs and web scraping.  
+2. **Data Wrangling**: Transformation of categorical and numerical data.  
+3. **Exploratory Data Analysis (EDA)**: Feature analysis and correlation discovery.  
+4. **Predictive Modeling**:  
+   - Linear Regression  
+   - Random Forest Regressor  
+
+### 🔑 Key Findings  
+- **Engine horsepower, vehicle style, and vehicle age** are the most critical determinants of MSRP.  
+- A **logarithmic transformation** of MSRP improved prediction accuracy.  
+- The **Random Forest Regressor** achieved an **R-squared value of 0.9914**, outperforming Linear Regression.  
+
+---
+
+## ⚙️ Methodology  
+
+### 1. Data Collection  
+- **API Requests**: Vehicle data retrieved and structured for analysis.  
+- **Web Scraping**: Extracted additional attributes (e.g., styles and specifications) using `BeautifulSoup`.  
+
+### 2. Data Preprocessing  
+- Missing numerical values were **imputed** with the mean.  
+- Categorical variables were **one-hot encoded**.  
+- **Log transformation** addressed skewness in MSRP distribution.  
+
+### 3. Exploratory Data Analysis (EDA)  
+- **Scatterplots**: Engine horsepower vs. MSRP.  
+- **Bar Charts**: Pricing differences across vehicle styles.  
+- **Histograms**: Before and after MSRP log transformation.  
+
+### 4. Model Training  
+- Split dataset: **80% training** | **20% test**.  
+- **Hyperparameter tuning**: Bayesian Optimization (XGBoost).  
+- Metrics evaluated:  
+   - Mean Squared Error (MSE)  
+   - R-squared  
+   - Adjusted R-squared  
+
+---
+
+## 📊 Results  
+
+### 🔎 Exploratory Data Analysis  
+- **Engine Horsepower** and **Car Age** are the most influential predictors.  
+- Vehicle styles and drive modes showed distinct pricing trends.  
+
+### 🏆 Model Performance  
+| Model                  | R-squared | Observations                                   |  
+|------------------------|-----------|-----------------------------------------------|  
+| **Linear Regression**  | 0.8533    | Struggled with nonlinear relationships.       |  
+| **Random Forest**      | 0.9914    | Captured complex feature interactions.        |  
+
+---
+
+## 📈 Visualization & Analytics  
+
+1. **Scatterplot**: Engine horsepower vs. MSRP  
+2. **Bar Chart**: Pricing differences by vehicle style  
+3. **Histogram**: MSRP distribution (before and after log transformation)  
+
+---
+
+## 🤖 Predictive Analytics  
+- **Random Forest Regressor** demonstrated superior accuracy.  
+- **Log transformation** reduced skewness and improved predictions.  
+
+---
+
+## 🏁 Conclusion  
+
+### 🚀 Model Performance  
+- **Random Forest Regressor** achieved an **R-squared of 0.9914**, effectively modeling nonlinear relationships.  
+
+### 🔑 Feature Importance  
+- Engine horsepower  
+- Vehicle style  
+- Car age  
+
+### 📌 Additional Insights  
+- Logarithmic transformation improved model accuracy.  
+- Pricing strategies can be refined using insights from EDA.  
+
+---
+
+## 🔮 Future Work  
+- Implement additional models like **XGBoost** for comparison.  
+- Expand the dataset for greater generalizability.  
+- Explore advanced feature selection techniques such as **PCA** (Principal Component Analysis).  
+
+---
+
+## 🛠️ Tools & Libraries  
+- **Programming Language**: Python  
+- **Libraries**: Pandas, NumPy, Matplotlib, Seaborn, Scikit-Learn, XGBoost  
+
+---
+
+## 📂 Project Structure  
+
+
+---
+
+### 👨‍💻 Authors  
+Jared Sheridan 
+LinkedIn: https://www.linkedin.com/in/jared-sheridan-a20364226/ 
+Evan Kavanagh
+LinkedIn: https://www.linkedin.com/in/evan-kavanagh-b81b8324a/
+
+
+---
