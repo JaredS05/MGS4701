@@ -1,6 +1,6 @@
 # 🚗 Kean University Data Analytics Capstone: Automobile Pricing  
 
-![image](https://github.com/user-attachments/assets/fc9a18cd-73ce-49e0-9f6d-b0a12c7769dd)
+![gif](https://github.com/user-attachments/assets/fc9a18cd-73ce-49e0-9f6d-b0a12c7769dd)
 
 
 ## 📌 Introduction  
