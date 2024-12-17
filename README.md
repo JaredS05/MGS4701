@@ -132,9 +132,12 @@ This project investigates automobile pricing using a robust machine learning pip
 
 ---
 
-### 👨‍💻 Authors  
+### 👨‍💻 Authors 
+
 Jared Sheridan 
-LinkedIn: https://www.linkedin.com/in/jared-sheridan-a20364226/ 
+LinkedIn: https://www.linkedin.com/in/jared-sheridan-a20364226/
+
+
 Evan Kavanagh
 LinkedIn: https://www.linkedin.com/in/evan-kavanagh-b81b8324a/
 
